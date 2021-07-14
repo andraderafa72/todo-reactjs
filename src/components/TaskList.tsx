@@ -16,7 +16,7 @@ export function TaskList() {
 
   function handleCreateNewTask() {
     if (!newTaskTitle) return;
-    let id = Math.floor(Math.random() * (99999999 - 1) + 1);
+    let id = Math.floor(Math.random() * (999999999 - 1) + 1);
     const task = {
       id,
       title: newTaskTitle,
@@ -26,11 +26,13 @@ export function TaskList() {
     let idAlreadyExists = tasks.filter(task => task.id === id)
 
     while (idAlreadyExists[0]) {
-      id = Math.random() * (99999999 - 1) + 1;
+      id = Math.floor(Math.random() * (999999999 - 1) + 1);
+      task.id = id
       idAlreadyExists = tasks.filter(task => task.id === id)
     }
 
-    setTasks([...tasks, task])
+    setTasks([...tasks, task]);
+    setNewTaskTitle('')
   }
 
   function handleToggleTaskCompletion(id: number) {
