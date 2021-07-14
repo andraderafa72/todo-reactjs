@@ -45,3 +45,7 @@ Primeiro desafio da trilha de ReactJS do Ignite, curso da Rocketseat
 - Inicie o servidor com `npm run dev`
 
 Agora você pode acessar [`localhost:8080`](http://localhost:8080) do seu navegador.
+
+<br>
+
+Made with 💜 by Rafael Andrade 👋 [Check out my LinkedIn](https://www.linkedin.com/in/andraderafa72)
